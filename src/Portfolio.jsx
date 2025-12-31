@@ -183,7 +183,7 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-slate-900">Diana Rose Angan-angan</h1>
+              <h1 className="text-3xl font-bold text-slate-900">Ma. Diana Rose Angan-angan</h1>
               <p className="text-lg text-slate-600 mt-1"> Aspiring Developer | IT Student</p>
               <p className="text-sm text-slate-500 mt-2">Seeking Software Development Internship (May 2026 Graduate)</p>
             </div>
