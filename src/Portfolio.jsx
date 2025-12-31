@@ -297,28 +297,29 @@ const Portfolio = () => {
                 <div className="text-sm text-slate-600">ICT Congress 2024</div>
               </div>
             </div>
-              {/* Work Approach */}
-              <section className="bg-white rounded-xl shadow-sm p-6 border border-slate-200 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">My Approach to Development</h2>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">Problem-Solving Mindset</h3>
-                    <p className="text-slate-700 text-sm">I approach challenges methodically, breaking down complex problems into manageable pieces and finding efficient solutions.</p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">Continuous Learning</h3>
-                    <p className="text-slate-700 text-sm">Technology evolves rapidly, and I'm committed to staying current through self-study, documentation, and hands-on experimentation.</p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">User-Centered Design</h3>
-                    <p className="text-slate-700 text-sm">I prioritize creating intuitive, accessible applications that provide real value to end users.</p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">Clean Code Advocate</h3>
-                    <p className="text-slate-700 text-sm">I believe in writing maintainable, well-documented code that other developers can easily understand and build upon.</p>
-                  </div>
+
+            {/* Work Approach */}
+            <section className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">My Approach to Development</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="font-semibold text-slate-900 mb-2">Problem-Solving Mindset</h3>
+                  <p className="text-slate-700 text-sm">I approach challenges methodically, breaking down complex problems into manageable pieces and finding efficient solutions.</p>
                 </div>
-              </section>
+                <div>
+                  <h3 className="font-semibold text-slate-900 mb-2">Continuous Learning</h3>
+                  <p className="text-slate-700 text-sm">Technology evolves rapidly, and I'm committed to staying current through self-study, documentation, and hands-on experimentation.</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-slate-900 mb-2">User-Centered Design</h3>
+                  <p className="text-slate-700 text-sm">I prioritize creating intuitive, accessible applications that provide real value to end users.</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-slate-900 mb-2">Clean Code Advocate</h3>
+                  <p className="text-slate-700 text-sm">I believe in writing maintainable, well-documented code that other developers can easily understand and build upon.</p>
+                </div>
+              </div>
+            </section>
           </div>
         )}
 
