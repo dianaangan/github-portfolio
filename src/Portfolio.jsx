@@ -250,7 +250,7 @@ const Portfolio = () => {
             <section className="bg-white rounded-xl shadow-sm p-6 border border-slate-200 animate-fade-in-up">
               <h2 className="text-2xl font-bold text-slate-900 mb-4">About Me</h2>
               <p className="text-slate-700 leading-relaxed">
-                I'm a graduating IT student at University of Cebu (May 2026) passionate about building applications that solve real-world problems. I've independently developed two production-ready mobile applications featuring blockchain technology, IoT integration, and modern full-stack architectures. I'm seeking a software development internship where I can contribute my technical skills, learn from experienced developers, and work on meaningful projects. I thrive in collaborative environments and love tackling challenging problems with modern technologies.
+                Graduating IT student at University of Cebu Banilad Campus (Expected May 2026) with a passion for building useful applications that solve real problems. I enjoy learning new technologies and working on projects that make a difference. Whether it's creating mobile apps, websites, or desktop programs, I focus on making solutions that are practical and user-friendly. I'm excited to bring my skills and enthusiasm to a team where I can continue learning and contributing to meaningful work.
               </p>
             </section>
 
@@ -297,28 +297,28 @@ const Portfolio = () => {
                 <div className="text-sm text-slate-600">ICT Congress 2024</div>
               </div>
             </div>
-
-            {/* Core Strengths */}
-            <section className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">Core Strengths</h2>
-              <div className="grid md:grid-cols-2 gap-3">
-                {[
-                  'Full-Stack Mobile & Web Development',
-                  'Blockchain & Smart Contract Development',
-                  'RESTful API Design & Integration',
-                  'Database Design & Optimization',
-                  'Problem Solving & Debugging',
-                  'Fast Learner & Self-Motivated',
-                  'Team Collaboration & Communication',
-                  'Agile Development Practices'
-                ].map((strength, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                    <span className="text-slate-700">{strength}</span>
+              {/* Work Approach */}
+              <section className="bg-white rounded-xl shadow-sm p-6 border border-slate-200 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">My Approach to Development</h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-2">Problem-Solving Mindset</h3>
+                    <p className="text-slate-700 text-sm">I approach challenges methodically, breaking down complex problems into manageable pieces and finding efficient solutions.</p>
                   </div>
-                ))}
-              </div>
-            </section>
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-2">Continuous Learning</h3>
+                    <p className="text-slate-700 text-sm">Technology evolves rapidly, and I'm committed to staying current through self-study, documentation, and hands-on experimentation.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-2">User-Centered Design</h3>
+                    <p className="text-slate-700 text-sm">I prioritize creating intuitive, accessible applications that provide real value to end users.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-2">Clean Code Advocate</h3>
+                    <p className="text-slate-700 text-sm">I believe in writing maintainable, well-documented code that other developers can easily understand and build upon.</p>
+                  </div>
+                </div>
+              </section>
           </div>
         )}
 
