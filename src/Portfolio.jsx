@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Download, Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Code, Award, Briefcase, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Download, Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Code, Award, Briefcase, ChevronLeft, ChevronRight, Target, BookOpen, Users, Code2, FolderOpen, Zap, GraduationCap, Trophy } from 'lucide-react';
 
 // Image paths
 const agritrust1 = '/github-portfolio/images/agritrust/mobile/1.png';
@@ -248,15 +248,83 @@ const Portfolio = () => {
           <div className="space-y-8">
             {/* About Me */}
             <section className="bg-white rounded-xl shadow-sm p-6 border border-slate-200 animate-fade-in-up">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">About Me</h2>
+              <div className="text-center mb-4">
+                <h2 className="text-xl font-semibold text-slate-900 border-b border-slate-300 pb-2 inline-block">About Me</h2>
+              </div>
               <p className="text-slate-700 leading-relaxed">
                 Graduating IT student at University of Cebu Banilad Campus (Expected May 2026) with a passion for building useful applications that solve real problems. I enjoy learning new technologies and working on projects that make a difference. Whether it's creating mobile apps, websites, or desktop programs, I focus on making solutions that are practical and user-friendly. I'm excited to bring my skills and enthusiasm to a team where I can continue learning and contributing to meaningful work.
               </p>
             </section>
 
-            {/* Core Strengths */}
+            {/* My Approach to Development */}
             <section className="bg-white rounded-xl shadow-sm p-6 border border-slate-200 animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">Core Strengths</h2>
+              <div className="text-center mb-4">
+                <h2 className="text-xl font-semibold text-slate-900 border-b border-slate-300 pb-2 inline-block">My Approach to Development</h2>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="group p-4 rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-300 bg-gradient-to-br from-blue-50/50 to-indigo-50/50">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                        <Target size={24} className="text-blue-600" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">Problem-Solving Mindset</h3>
+                      <p className="text-slate-700 text-sm leading-relaxed">I approach challenges methodically, breaking down complex problems into manageable pieces and finding efficient solutions.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="group p-4 rounded-lg border border-slate-200 hover:border-green-300 hover:shadow-md transition-all duration-300 bg-gradient-to-br from-green-50/50 to-emerald-50/50">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                        <BookOpen size={24} className="text-green-600" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-slate-900 mb-2 group-hover:text-green-700 transition-colors">Continuous Learning</h3>
+                      <p className="text-slate-700 text-sm leading-relaxed">Technology evolves rapidly, and I'm committed to staying current through self-study, documentation, and hands-on experimentation.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="group p-4 rounded-lg border border-slate-200 hover:border-purple-300 hover:shadow-md transition-all duration-300 bg-gradient-to-br from-purple-50/50 to-pink-50/50">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
+                        <Users size={24} className="text-purple-600" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-slate-900 mb-2 group-hover:text-purple-700 transition-colors">User-Centered Design</h3>
+                      <p className="text-slate-700 text-sm leading-relaxed">I prioritize creating intuitive, accessible applications that provide real value to end users.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="group p-4 rounded-lg border border-slate-200 hover:border-orange-300 hover:shadow-md transition-all duration-300 bg-gradient-to-br from-orange-50/50 to-yellow-50/50">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
+                        <Code2 size={24} className="text-orange-600" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-slate-900 mb-2 group-hover:text-orange-700 transition-colors">Clean Code Advocate</h3>
+                      <p className="text-slate-700 text-sm leading-relaxed">I believe in writing maintainable, well-documented code that other developers can easily understand and build upon.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Core Strengths */}
+            <section className="bg-white rounded-xl shadow-sm p-6 border border-slate-200 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+              <div className="text-center mb-4">
+                <h2 className="text-xl font-semibold text-slate-900 border-b border-slate-300 pb-2 inline-block">Core Strengths</h2>
+              </div>
               <div className="flex flex-wrap gap-2">
                 {[
                   'Software Development',
@@ -268,7 +336,7 @@ const Portfolio = () => {
                   'Fast Learner',
                   'Detail-Oriented'
                 ].map((strength, idx) => (
-                  <span 
+                  <span
                     key={idx}
                     className="px-3 py-1.5 text-sm font-medium text-slate-700 border border-slate-300 rounded-full hover:bg-slate-50 hover:border-slate-400 hover:shadow-md transition transform hover:scale-105"
                   >
@@ -280,46 +348,50 @@ const Portfolio = () => {
 
             {/* Quick Stats */}
             <div className="grid md:grid-cols-4 gap-4">
-              <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-                <div className="text-3xl font-bold text-blue-600 mb-2">2</div>
-                <div className="text-sm text-slate-600">Production Projects</div>
+              <div className="group bg-white rounded-xl shadow-sm p-6 border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300 animate-fade-in-up bg-gradient-to-br from-blue-50/30 to-indigo-50/30" style={{animationDelay: '0.3s'}}>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                    <FolderOpen size={24} className="text-blue-600" />
+                  </div>
+                  <div className="text-2xl font-bold text-blue-600 group-hover:scale-110 transition-transform">2</div>
+                </div>
+                <div className="text-sm font-medium text-slate-700 group-hover:text-blue-700 transition-colors">Production Projects</div>
+                <div className="text-xs text-slate-500 mt-1">Completed & Deployed</div>
               </div>
-              <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200 animate-fade-in-up" style={{animationDelay: '0.25s'}}>
-                <div className="text-3xl font-bold text-green-600 mb-2">15+</div>
-                <div className="text-sm text-slate-600">Technologies Mastered</div>
+
+              <div className="group bg-white rounded-xl shadow-sm p-6 border border-slate-200 hover:border-green-300 hover:shadow-lg transition-all duration-300 animate-fade-in-up bg-gradient-to-br from-green-50/30 to-emerald-50/30" style={{animationDelay: '0.35s'}}>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                    <Zap size={24} className="text-green-600" />
+                  </div>
+                  <div className="text-3xl font-bold text-green-600 group-hover:scale-110 transition-transform">15+</div>
+                </div>
+                <div className="text-sm font-medium text-slate-700 group-hover:text-green-700 transition-colors">Technologies Mastered</div>
+                <div className="text-xs text-slate-500 mt-1">Programming & Tools</div>
               </div>
-              <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200 animate-fade-in-up" style={{animationDelay: '0.3s'}}>
-                <div className="text-3xl font-bold text-purple-600 mb-2">Dean's List</div>
-                <div className="text-sm text-slate-600">Years 1-2</div>
+
+              <div className="group bg-white rounded-xl shadow-sm p-6 border border-slate-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300 animate-fade-in-up bg-gradient-to-br from-purple-50/30 to-pink-50/30" style={{animationDelay: '0.4s'}}>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
+                    <GraduationCap size={24} className="text-purple-600" />
+                  </div>
+                  <div className="text-3xl font-bold text-purple-600 group-hover:scale-110 transition-transform">Dean's List</div>
+                </div>
+                <div className="text-sm font-medium text-slate-700 group-hover:text-purple-700 transition-colors">Academic Excellence</div>
+                <div className="text-xs text-slate-500 mt-1">Years 1-2</div>
               </div>
-              <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200 animate-fade-in-up" style={{animationDelay: '0.35s'}}>
-                <div className="text-3xl font-bold text-orange-600 mb-2">3rd Place</div>
-                <div className="text-sm text-slate-600">ICT Congress 2024</div>
+
+              <div className="group bg-white rounded-xl shadow-sm p-6 border border-slate-200 hover:border-orange-300 hover:shadow-lg transition-all duration-300 animate-fade-in-up bg-gradient-to-br from-orange-50/30 to-yellow-50/30" style={{animationDelay: '0.45s'}}>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
+                    <Trophy size={24} className="text-orange-600" />
+                  </div>
+                  <div className="text-3xl font-bold text-orange-600 group-hover:scale-110 transition-transform">3rd Place</div>
+                </div>
+                <div className="text-sm font-medium text-slate-700 group-hover:text-orange-700 transition-colors">ICT Congress 2024</div>
+                <div className="text-xs text-slate-500 mt-1">Hackathon Achievement</div>
               </div>
             </div>
-
-            {/* Work Approach */}
-            <section className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">My Approach to Development</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="font-semibold text-slate-900 mb-2">Problem-Solving Mindset</h3>
-                  <p className="text-slate-700 text-sm">I approach challenges methodically, breaking down complex problems into manageable pieces and finding efficient solutions.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-900 mb-2">Continuous Learning</h3>
-                  <p className="text-slate-700 text-sm">Technology evolves rapidly, and I'm committed to staying current through self-study, documentation, and hands-on experimentation.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-900 mb-2">User-Centered Design</h3>
-                  <p className="text-slate-700 text-sm">I prioritize creating intuitive, accessible applications that provide real value to end users.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-900 mb-2">Clean Code Advocate</h3>
-                  <p className="text-slate-700 text-sm">I believe in writing maintainable, well-documented code that other developers can easily understand and build upon.</p>
-                </div>
-              </div>
-            </section>
           </div>
         )}
 
@@ -335,10 +407,10 @@ const Portfolio = () => {
                     <p className="text-green-100">Blockchain-Driven Agricultural Supply Chain Application</p>
                   </div>
                   <div className="flex gap-2">
-                    <a href="https://github.com/dianaangan" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/20 rounded-lg hover:bg-white/30 transition">
+                    <a href="https://github.com/dianaangan/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/20 rounded-lg hover:bg-white/30 transition">
                       <Github size={20} />
                     </a>
-                    <a href="https://github.com/dianaangan" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/20 rounded-lg hover:bg-white/30 transition">
+                    <a href="https://github.com/dianaangan/AgriTrust" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/20 rounded-lg hover:bg-white/30 transition">
                       <ExternalLink size={20} />
                     </a>
                   </div>
@@ -471,10 +543,10 @@ const Portfolio = () => {
                     <p className="text-blue-100">IoT Smart Doorbell Monitoring System</p>
                   </div>
                   <div className="flex gap-2">
-                    <a href="https://github.com/dianaangan" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/20 rounded-lg hover:bg-white/30 transition">
+                    <a href="https://github.com/dianaangan/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/20 rounded-lg hover:bg-white/30 transition">
                       <Github size={20} />
                     </a>
-                    <a href="https://github.com/dianaangan" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/20 rounded-lg hover:bg-white/30 transition">
+                    <a href="https://github.com/dianaangan/KnockTrack" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/20 rounded-lg hover:bg-white/30 transition">
                       <ExternalLink size={20} />
                     </a>
                   </div>
