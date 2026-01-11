@@ -12,7 +12,7 @@ const Portfolio = () => {
   const [animationKey, setAnimationKey] = useState(0);
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem('darkMode');
-    return saved ? JSON.parse(saved) : false;
+    return saved ? JSON.parse(saved) : true;
   });
   const [imageModal, setImageModal] = useState({ isOpen: false, src: '', alt: '' });
   const [showAllImages, setShowAllImages] = useState({});
