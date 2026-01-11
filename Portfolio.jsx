@@ -271,10 +271,10 @@ const Portfolio = () => {
               </div>
 
               {/* Enhanced CTA Buttons */}
-              <div className="flex flex-wrap justify-center gap-3 animate-fade-in">
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 animate-fade-in">
                 <button 
                   onClick={() => scrollToSection('projects')}
-                  className="group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5 animate-pulse hover:animate-none"
+                  className="group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-4 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5 animate-pulse hover:animate-none text-sm sm:text-base"
                 >
                   View Projects 
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
@@ -283,14 +283,14 @@ const Portfolio = () => {
                   href="/github-portfolio/resume.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-semibold transition-all duration-300 hover:-translate-y-0.5 shadow-lg hover:shadow-xl flex items-center gap-2"
+                  className="px-4 sm:px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-semibold transition-all duration-300 hover:-translate-y-0.5 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 text-sm sm:text-base"
                 >
                   <Download size={16} />
                   Resume
                 </a>
                 <a 
                   href="mailto:anganangandianarose@gmail.com"
-                  className="px-6 py-3 border-2 border-slate-300 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 rounded-lg font-semibold transition-all duration-300 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:-translate-y-0.5 shadow-sm hover:shadow-md"
+                  className="px-4 sm:px-6 py-3 border-2 border-slate-300 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 rounded-lg font-semibold transition-all duration-300 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:-translate-y-0.5 shadow-sm hover:shadow-md text-sm sm:text-base"
                 >
                   Contact Me
                 </a>
@@ -308,12 +308,12 @@ const Portfolio = () => {
             <p className="text-slate-600 dark:text-slate-400 text-sm">Highlights of my academic and professional journey</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
             {[
               { 
                 icon: FolderOpen, 
                 number: '2', 
-                label: 'Production Projects', 
+                label: 'Projects Completed', 
                 desc: 'Completed & Deployed',
                 gradient: 'from-blue-500 to-blue-600',
                 bg: 'bg-blue-50 dark:bg-blue-900/20'
@@ -371,14 +371,14 @@ const Portfolio = () => {
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
-                className={`flex items-center gap-2 px-6 py-4 border-b-2 font-medium transition-all duration-300 hover:scale-105 transform ${
+                className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 sm:py-4 border-b-2 font-medium transition-all duration-300 hover:scale-105 transform text-xs sm:text-sm ${
                   activeTab === id
                     ? 'border-blue-600 text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/20 scale-105'
                     : 'border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-50 dark:hover:bg-slate-800/50'
                 }`}
               >
-                <Icon size={18} className={`transition-transform duration-300 ${activeTab === id ? 'scale-110' : ''}`} />
-                {label}
+                <Icon size={16} className={`transition-transform duration-300 ${activeTab === id ? 'scale-110' : ''} sm:size-18`} />
+                <span className="hidden sm:inline">{label}</span>
               </button>
             ))}
           </nav>
@@ -386,7 +386,7 @@ const Portfolio = () => {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-6 py-12">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {/* Overview Tab */}
         {activeTab === 'overview' && (
           <div key={`overview-${animationKey}`} ref={overviewRef} data-section="overview" className="space-y-8 animate-fade-in">
@@ -463,7 +463,7 @@ const Portfolio = () => {
               <p className="text-slate-600 dark:text-slate-400 text-sm">Showcasing my latest projects</p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
               {projects.map((project, idx) => (
                 <div key={project.id} className="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-1 animate-slide-up" style={{animationDelay: `${(idx + 2) * 0.1}s`}}>
                   {/* Enhanced Project Header */}
@@ -595,7 +595,7 @@ const Portfolio = () => {
               <p className="text-slate-600 dark:text-slate-400 text-sm">Technologies and tools I work with</p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {Object.entries(skills).map(([category, skillList], idx) => {
                 const icons = {
                   'Programming Languages': Code2,
@@ -759,16 +759,16 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer className="bg-slate-50 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-12">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center">
-            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Ready to collaborate?</h3>
-            <p className="text-slate-600 dark:text-slate-400 mb-6">Open for Internships • Part-time • Full-time • Freelance Gigs</p>
-            <div className="flex justify-center gap-4">
+            <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2">Ready to collaborate?</h3>
+            <p className="text-slate-600 dark:text-slate-400 mb-6 text-sm sm:text-base">Open for Internships • Part-time • Full-time • Freelance Gigs</p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a href="mailto:anganangandianarose@gmail.com" 
-                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-3 rounded-lg font-medium transition-colors text-sm sm:text-base">
                 Get In Touch
               </a>
-              <div className="flex gap-2">
+              <div className="flex justify-center gap-2">
                 <a href="https://github.com/dianaangan" target="_blank" rel="noopener noreferrer" 
                    className="p-3 border border-slate-300 dark:border-slate-600 rounded-lg hover:border-slate-400 dark:hover:border-slate-500 transition-colors">
                   <Github size={18} />
@@ -781,7 +781,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-700 text-center">
-            <p className="text-slate-500 dark:text-slate-400 text-sm">
+            <p className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm">
               © 2026 Ma. Diana Rose Angan-angan. Built with React & Tailwind CSS.
             </p>
           </div>
