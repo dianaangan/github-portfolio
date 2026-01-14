@@ -245,14 +245,14 @@ const Portfolio = () => {
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <div className="h-px w-8 bg-gradient-to-r from-transparent to-blue-600"></div>
                   <p className="text-lg text-blue-600 dark:text-blue-400 font-semibold">
-                    Aspiring Software Developer
+                    Aspiring Software Developer and QA Engineer
                   </p>
                   <div className="h-px w-8 bg-gradient-to-l from-transparent to-blue-600"></div>
                 </div>
               </div>
               
               <p className="text-base text-slate-600 dark:text-slate-400 leading-relaxed mb-6 max-w-3xl mx-auto">
-                Passionate software developer focused on building practical, user-friendly solutions and continuously learning to solve real-world problems.
+                Passionate about technology and creating solutions that make a difference. Always learning, always building.
               </p>
 
               {/* Enhanced Professional Info Cards */}
@@ -400,7 +400,7 @@ const Portfolio = () => {
               </div>
               <div className="pl-13">
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm">
-                  Aspiring Software developer with hands-on experience creating applications that address real-world challenges. Passionate about writing clean, efficient code and learning new technologies to stay current with industry trends. Skilled at translating complex technical requirements into user-friendly solutions, combining strong problem-solving abilities with effective teamwork. Experienced in full-stack development, mobile applications, and emerging technologies, with a proven ability to adapt quickly to new frameworks and tools.
+                  Aspiring Software Developer and QA Engineer with hands-on experience creating and testing applications that address real-world challenges. Passionate about writing clean, efficient code and ensuring software quality through comprehensive testing. Skilled at translating complex technical requirements into user-friendly solutions while maintaining high standards of reliability and performance. Experienced in full-stack development, mobile applications, quality assurance practices, and emerging technologies, with a proven ability to adapt quickly to new frameworks and tools.
                 </p>
               </div>
             </section>
