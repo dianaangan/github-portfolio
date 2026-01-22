@@ -442,12 +442,12 @@ const Portfolio = () => {
                     bg: 'bg-amber-50 dark:bg-amber-900/20'
                   }
                 ].map(({ icon: Icon, title, desc, gradient, bg }, idx) => (
-                  <div key={idx} className={`${bg} rounded-xl p-4 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 border border-white/50 dark:border-slate-700/50 animate-scale-in`} style={{animationDelay: `${(idx + 3) * 0.1}s`}}>
-                    <div className={`w-12 h-12 bg-gradient-to-r ${gradient} rounded-xl flex items-center justify-center mx-auto mb-3 shadow-md`}>
+                  <div key={idx} className={`${bg} rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:scale-105 border border-white/50 dark:border-slate-700/50 animate-scale-in group cursor-pointer`} style={{animationDelay: `${(idx + 3) * 0.1}s`}}>
+                    <div className={`w-12 h-12 bg-gradient-to-r ${gradient} rounded-xl flex items-center justify-center mx-auto mb-3 shadow-md group-hover:shadow-lg group-hover:scale-110 transition-all duration-300`}>
                       <Icon className="text-white" size={20} />
                     </div>
-                    <h3 className={`font-bold text-sm mb-2 bg-gradient-to-r ${gradient} bg-clip-text text-transparent`}>{title}</h3>
-                    <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">{desc}</p>
+                    <h3 className={`font-bold text-sm mb-2 bg-gradient-to-r ${gradient} bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300`}>{title}</h3>
+                    <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors duration-300">{desc}</p>
                   </div>
                 ))}
               </div>
