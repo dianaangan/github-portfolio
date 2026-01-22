@@ -714,6 +714,21 @@ const Portfolio = () => {
                     date: 'May 2022'
                   },
                   { 
+                    title: 'Entrepreneurship Certificate', 
+                    org: 'Cisco', 
+                    date: '2022'
+                  },
+                  { 
+                    title: 'Introduction to IoT Certificate', 
+                    org: 'Cisco', 
+                    date: '2022'
+                  },
+                  { 
+                    title: 'Get Connected Certificate', 
+                    org: 'Cisco', 
+                    date: '2022'
+                  },
+                  { 
                     title: 'NC II, Computer System Servicing', 
                     org: 'TESDA', 
                     date: 'March 2020'
