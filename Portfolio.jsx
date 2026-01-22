@@ -245,7 +245,7 @@ const Portfolio = () => {
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <div className="h-px w-8 bg-gradient-to-r from-transparent to-blue-600"></div>
                   <p className="text-lg text-blue-600 dark:text-blue-400 font-semibold">
-                    Aspiring Software Developer and QA Engineer
+                    Aspiring Software Developer
                   </p>
                   <div className="h-px w-8 bg-gradient-to-l from-transparent to-blue-600"></div>
                 </div>
@@ -400,7 +400,7 @@ const Portfolio = () => {
               </div>
               <div className="pl-13">
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm">
-                  Aspiring Software Developer and QA Engineer with hands-on experience creating and testing applications that address real-world challenges. Passionate about writing clean, efficient code and ensuring software quality through comprehensive testing. Skilled at translating complex technical requirements into user-friendly solutions while maintaining high standards of reliability and performance. Experienced in full-stack development, mobile applications, quality assurance practices, and emerging technologies, with a proven ability to adapt quickly to new frameworks and tools.
+                  Final-year IT student (graduating May 2026) with hands-on experience in software development. Proven ability to deliver practical solutions through academic projects and competitive achievements. Passionate about technology, quick to learn, and eager to contribute to innovative teams.
                 </p>
               </div>
             </section>
@@ -681,43 +681,42 @@ const Portfolio = () => {
             {/* Certifications */}
             <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-6 animate-slide-up" style={{animationDelay: '0.3s'}}>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4">Certifications</h3>
+              <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                <p className="text-blue-700 dark:text-blue-300 text-xs font-medium">
+                  📋 Certificate copies available upon request for verification purposes
+                </p>
+              </div>
               <div className="space-y-3">
                 {[
                   { 
                     title: 'ICT Congress 2024 Hackathon – 3rd Runner Up', 
                     org: 'University of Cebu', 
-                    date: 'April 2025',
-                    image: null
+                    date: 'April 2025'
                   },
                   { 
                     title: 'ICT Congress 2024 Hackathon Participation Certificate', 
                     org: 'University of Cebu', 
-                    date: 'April 2025',
-                    image: null
+                    date: 'April 2025'
                   },
                   { 
                     title: 'Networking Essentials Certificate', 
                     org: 'Cisco', 
-                    date: 'May 2022',
-                    image: '/github-portfolio/images/certificates/Networking_Essentials_certificate_anganangandianarose-gmail-com_81177c1a-bd53-4735-bc17-cce0deb54f29_page-0001.jpg'
+                    date: 'May 2022'
                   },
                   { 
                     title: 'Introduction to Cybersecurity Certificate', 
                     org: 'Cisco', 
-                    date: 'March 2022',
-                    image: '/github-portfolio/images/certificates/Introduction_to_Cybersecurity_certificate_anganangandianarose-gmail-com_95abe113-b076-49b8-8aad-4601e663236d_page-0001.jpg'
+                    date: 'March 2022'
                   },
                   { 
                     title: 'Introduction to Packet Tracer Certificate', 
                     org: 'Cisco', 
-                    date: 'May 2022',
-                    image: '/github-portfolio/images/certificates/Introduction_to_Packet_Tracer_certificate_anganangandianarose-gmail-com_972e27a3-eab6-4d10-973e-5b294784433b_page-0001.jpg'
+                    date: 'May 2022'
                   },
                   { 
                     title: 'NC II, Computer System Servicing', 
                     org: 'TESDA', 
-                    date: 'March 2020',
-                    image: null
+                    date: 'March 2020'
                   }
                 ].map((cert, idx) => (
                   <div key={idx} className="flex items-start gap-3 p-3 bg-slate-50 dark:bg-slate-700/50 rounded-lg animate-fade-in group hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors" style={{animationDelay: `${(idx + 4) * 0.1}s`}}>
@@ -727,28 +726,7 @@ const Portfolio = () => {
                     <div className="flex-1">
                       <h4 className="font-medium text-slate-900 dark:text-white text-sm">{cert.title}</h4>
                       <p className="text-slate-600 dark:text-slate-400 text-xs mb-2">{cert.org} • {cert.date}</p>
-                      {cert.image && (
-                        <div className="mt-2">
-                          <img 
-                            src={cert.image}
-                            alt={cert.title}
-                            className="w-32 h-24 object-cover rounded-md border border-slate-200 dark:border-slate-600 cursor-pointer hover:scale-105 transition-transform duration-300 shadow-sm"
-                            onClick={() => openImageModal(cert.image, cert.title)}
-                            onError={(e) => {
-                              e.target.style.display = 'none';
-                            }}
-                          />
-                        </div>
-                      )}
                     </div>
-                    {cert.image && (
-                      <button 
-                        onClick={() => openImageModal(cert.image, cert.title)}
-                        className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-1 bg-blue-100 dark:bg-blue-900/30 rounded-md hover:bg-blue-200 dark:hover:bg-blue-900/50"
-                      >
-                        <ExternalLink size={12} className="text-blue-600 dark:text-blue-400" />
-                      </button>
-                    )}
                   </div>
                 ))}
               </div>
