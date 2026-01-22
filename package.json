@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://dianaangan.github.io/github-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
