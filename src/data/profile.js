@@ -9,7 +9,7 @@ export const PROFILE = {
   location: 'Cebu City, Philippines',
   github: 'https://github.com/dianaangan',
   linkedin: 'https://linkedin.com/in/dianaangan',
-  resumePath: '/github-portfolio/resume.pdf?v=20260823',
+  resumePath: '/github-portfolio/resume.pdf?v=20260909',
   photoPath: '/github-portfolio/images/profile/profile-photo.png?v=20260626',
   heroBio:
     'Software developer with professional experience building web and mobile applications. Passionate about scalable solutions and solving real-world problems.',

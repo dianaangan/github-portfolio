@@ -4,8 +4,8 @@ export const EXPERIENCE = [
     company: 'Logicim Inc.',
     role: 'Full-Stack Developer',
     type: 'Freelance',
-    period: 'April 2026 – Present',
-    current: true,
+    period: 'April 2025 – September 2026',
+    current: false,
     description:
       'Develop and maintain enterprise web applications for business management solutions, delivering scalable full-stack features and supporting business requirements.',
     impact:
