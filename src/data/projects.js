@@ -24,7 +24,7 @@ export const PROJECTS = [
       '/github-portfolio/images/food-finder/screenshot-5.png',
       '/github-portfolio/images/food-finder/screenshot-6.png',
     ],
-    projectType: 'Technical Assessment',
+    projectType: 'Personal Project',
     role: 'Full-Stack Developer',
     date: 'Sep 2026',
   },
