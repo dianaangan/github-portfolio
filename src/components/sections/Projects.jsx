@@ -44,7 +44,9 @@ export default function Projects({ onImageClick }) {
                     <img
                       src={cover}
                       alt={`${project.title} main screenshot`}
-                      className="w-full h-72 sm:h-80 lg:h-96 object-cover object-top"
+                      className={project.imageLayout === 'landscape'
+                        ? 'w-full aspect-video object-contain object-top'
+                        : 'w-full h-72 sm:h-80 lg:h-96 object-cover object-top'}
                       onError={(e) => {
                         e.target.src = IMAGE_PLACEHOLDER;
                       }}

@@ -1,5 +1,34 @@
 export const PROJECTS = [
   {
+    id: 3,
+    title: 'Food Finder',
+    subtitle: 'Multilingual Food Search & Nutrition Platform',
+    description:
+      'Full-stack packaged food discovery app powered by Open Food Facts. Browse and search products in four languages, revisit recent searches, and unlock available nutrition information through monthly Stripe test subscriptions.',
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Express.js', 'Prisma', 'MySQL', 'Stripe', 'Open Food Facts API'],
+    features: [
+      'Product Search & Pagination',
+      'English, Dutch, German & French',
+      'Saved Recent Searches',
+      'Stripe Test Subscriptions',
+      'Subscription-Based Nutrition Access',
+      'Webhook Subscription Sync',
+    ],
+    github: 'https://github.com/dianaangan/food-finder',
+    imageLayout: 'landscape',
+    images: [
+      '/github-portfolio/images/food-finder/screenshot-1.png',
+      '/github-portfolio/images/food-finder/screenshot-2.png',
+      '/github-portfolio/images/food-finder/screenshot-3.png',
+      '/github-portfolio/images/food-finder/screenshot-4.png',
+      '/github-portfolio/images/food-finder/screenshot-5.png',
+      '/github-portfolio/images/food-finder/screenshot-6.png',
+    ],
+    projectType: 'Technical Assessment',
+    role: 'Full-Stack Developer',
+    date: 'Sep 2026',
+  },
+  {
     id: 1,
     title: 'AgriTrust',
     subtitle: 'Blockchain Agricultural Supply Chain Platform',
