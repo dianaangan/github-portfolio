@@ -7,7 +7,7 @@ import { staggerContainer, fadeInUp } from '../../lib/motion';
 
 export default function Education() {
   return (
-    <section id="education" className="py-24 lg:py-28 scroll-mt-24 lg:scroll-mt-12">
+    <section id="education" className="py-24 lg:py-28 scroll-mt-24 lg:scroll-mt-28">
       <Reveal>
         <SectionHeading index="05" title="Education" />
       </Reveal>
@@ -37,10 +37,11 @@ export default function Education() {
           <h3 className="font-semibold text-sm text-slate-900 dark:text-white">Certifications & Awards</h3>
           <span className="tag">{CERTIFICATIONS.length} total</span>
         </div>
-        <motion.ul variants={staggerContainer(0.05)} className="px-2 py-2">
+        <div className="px-2 py-2">
           <p className="text-xs text-slate-400 dark:text-slate-500 px-3 py-2.5">
             Certificate copies available upon request for verification
           </p>
+          <motion.ul variants={staggerContainer(0.05)} className="certificate-grid">
           {CERTIFICATIONS.map((cert, i) => (
             <motion.li
               key={i}
@@ -62,7 +63,8 @@ export default function Education() {
               </div>
             </motion.li>
           ))}
-        </motion.ul>
+          </motion.ul>
+        </div>
       </Reveal>
     </section>
   );

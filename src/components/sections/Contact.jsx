@@ -1,42 +1,6 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowUpRight, Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import Reveal from '../ui/Reveal';
 import { PROFILE } from '../../data/profile';
-import { fadeInUp } from '../../lib/motion';
-
 export default function Contact() {
-  return (
-    <section id="contact" className="py-24 lg:py-32 scroll-mt-24 lg:scroll-mt-12 text-center">
-      <Reveal variants={fadeInUp}>
-        <p className="eyebrow mb-4">06 · What&apos;s Next?</p>
-        <h2 className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white">
-          Get In Touch
-        </h2>
-        <p className="mt-5 max-w-md mx-auto text-slate-500 dark:text-slate-400 leading-relaxed">
-          {PROFILE.footerTagline}
-        </p>
-
-        <div className="flex flex-wrap justify-center gap-3 mt-9">
-          <a href={`mailto:${PROFILE.email}`} className="focus-ring btn-solid">
-            <Mail size={15} /> Say Hello
-          </a>
-          <a
-            href={PROFILE.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="focus-ring btn-outline"
-          >
-            <Github size={15} /> GitHub
-          </a>
-          <a
-            href={PROFILE.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="focus-ring btn-outline"
-          >
-            <Linkedin size={15} /> LinkedIn
-          </a>
-        </div>
-      </Reveal>
-    </section>
-  );
+  return <section id="contact" className="section-space"><Reveal className="contact-panel"><div><p className="eyebrow">06 / Let’s connect</p><h2>Have something<br />in mind<span className="accent-text">?</span></h2><p className="muted mt-6 max-w-md leading-relaxed">I’m open to full-time roles, freelance projects, and collaborations. Let’s build something useful together.</p><a href={`mailto:${PROFILE.email}`} className="btn-solid focus-ring mt-8">Let’s talk <ArrowUpRight size={18} /></a></div><div className="contact-details"><a href={`mailto:${PROFILE.email}`} className="focus-ring"><Mail size={19} /><span><small>Email me</small>{PROFILE.email}</span></a><div><MapPin size={19} /><span><small>Based in</small>{PROFILE.location}</span></div><div className="flex gap-6"><a href={PROFILE.github} target="_blank" rel="noopener noreferrer" className="text-link focus-ring"><Github size={17} /> GitHub <ArrowUpRight size={14} /></a><a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className="text-link focus-ring"><Linkedin size={17} /> LinkedIn <ArrowUpRight size={14} /></a></div></div></Reveal></section>;
 }

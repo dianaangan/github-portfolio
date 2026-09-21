@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { Download, Menu, Moon, Sun, X } from 'lucide-react';
 import { PROFILE } from '../../data/profile';
@@ -7,14 +7,32 @@ import SocialLinks from '../ui/SocialLinks';
 import { scrollToSection } from '../../hooks/useActiveSection';
 
 export default function MobileNav({ activeSection, darkMode, onToggleDarkMode }) {
+  const menuPanel = useRef(null);
+  const menuTrigger = useRef(null);
   const [open, setOpen] = useState(false);
   const shouldReduceMotion = useReducedMotion();
   const initials = `${PROFILE.name.first[0]}${PROFILE.name.last[0]}`;
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
+    if (!open) return undefined;
+    const trigger = menuTrigger.current;
+    menuPanel.current?.querySelector('button')?.focus();
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') setOpen(false);
+      if (event.key === 'Tab') {
+        const elements = menuPanel.current?.querySelectorAll('button, a[href]');
+        if (!elements?.length) return;
+        const first = elements[0], last = elements[elements.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    };
+    document.addEventListener('keydown', onKeyDown);
     return () => {
       document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKeyDown);
+      trigger?.focus();
     };
   }, [open]);
 
@@ -43,6 +61,7 @@ export default function MobileNav({ activeSection, darkMode, onToggleDarkMode })
         </a>
 
         <button
+          ref={menuTrigger}
           onClick={() => setOpen(true)}
           className="focus-ring p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
           aria-label="Open navigation menu"
@@ -55,6 +74,10 @@ export default function MobileNav({ activeSection, darkMode, onToggleDarkMode })
       <AnimatePresence>
         {open && (
           <motion.div
+            ref={menuPanel}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation menu"
             className="lg:hidden fixed inset-0 z-[60] bg-white dark:bg-ink-950 flex flex-col"
             initial={shouldReduceMotion ? undefined : { opacity: 0 }}
             animate={{ opacity: 1 }}

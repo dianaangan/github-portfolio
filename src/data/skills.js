@@ -1,34 +1,27 @@
-import {
-  Code2, Globe, Database, Shield, Monitor, Cloud, Code, Smartphone, BarChart3,
-} from 'lucide-react';
+import { Code2, Globe, Database, Shield, Monitor, Cloud, Code, Smartphone, BarChart3 } from 'lucide-react';
 
 export const SKILLS = {
-  'Programming Languages': ['JavaScript', 'Java', 'Python', 'C#', 'Kotlin', 'PHP', 'SQL', 'C', 'Solidity'],
-  'Web & Mobile Frameworks': ['React', 'ASP.NET Core', 'Express.js', 'React Native', 'Expo', 'Blazor', 'HTML', 'CSS'],
-  'Database Systems': ['MySQL', 'SQL Server', 'MongoDB', 'Firebase', 'Supabase'],
-  'Blockchain Technology': ['Solidity', 'Hardhat', 'Ethers.js', 'Smart Contracts', 'Sepolia Testnet'],
-  'Development Tools': ['Git/GitHub', 'Visual Studio', 'VS Code', 'IntelliJ IDEA', 'Android Studio', 'Azure DevOps'],
-  'APIs & Services': ['Google Maps/Places API', 'Stripe', 'Cloudinary', 'JWT Authentication', 'RESTful APIs'],
-  'Software Engineering': [
-    'Object-Oriented Programming (OOP)',
-    'Data Structures & Algorithms',
-    'MVC Architecture',
-    'Database Design (ERD)',
-    'Entity Framework Core',
-    'RESTful API Development',
-  ],
-  'Desktop Development': ['JavaFX', 'Windows Forms', 'WPF'],
+  'Programming Languages': ['C#', 'JavaScript', 'TypeScript', 'Java', 'Python', 'Kotlin', 'PHP', 'SQL', 'C', 'Solidity'],
+  'Frontend & UI': ['React', 'Next.js', 'Blazor', 'HTML5', 'CSS3', 'Tailwind CSS', 'Shadcn UI', 'Vite', 'Syncfusion', 'Figma'],
+  'Backend & APIs': ['.NET 8', 'ASP.NET Core', 'Node.js', 'Express.js', 'REST APIs', 'JWT Authentication', 'Entity Framework Core', 'Prisma'],
+  'Databases & Cloud': ['SQL Server', 'MySQL', 'PostgreSQL', 'MongoDB', 'Firebase', 'Supabase', 'Azure Web Apps', 'Vercel', 'Upstash Redis'],
+  'Mobile & Desktop': ['React Native', 'Expo', 'Android', 'JavaFX', 'Windows Forms', 'WPF'],
+  'Blockchain Technology': ['Hardhat', 'Ethers.js', 'Smart Contracts', 'Sepolia'],
+  'APIs & Services': ['Stripe', 'Webhooks', 'Google Maps/Places', 'Firebase Cloud Messaging', 'Cloudinary', 'Open Food Facts', 'Alchemy'],
+  'Software Engineering': ['Object-Oriented Programming (OOP)', 'Data Structures & Algorithms', 'MVC/MVP Architecture', 'Database Design (ERD)', 'xUnit', 'Playwright', 'Debugging', 'Unit Testing'],
+  'Development Tools': ['Git/GitHub', 'Azure DevOps', 'Postman', 'Visual Studio', 'VS Code', 'Android Studio', 'IntelliJ IDEA', 'Apache NetBeans', 'Cursor', 'GitHub Copilot', 'Codex'],
   Methodologies: ['Agile', 'Scrum', 'Waterfall'],
 };
 
 export const SKILL_ICONS = {
   'Programming Languages': Code2,
-  'Web & Mobile Frameworks': Globe,
-  'Database Systems': Database,
+  'Frontend & UI': Globe,
+  'Backend & APIs': Code,
+  'Databases & Cloud': Database,
+  'Mobile & Desktop': Smartphone,
   'Blockchain Technology': Shield,
-  'Development Tools': Monitor,
   'APIs & Services': Cloud,
   'Software Engineering': Code,
-  'Desktop Development': Smartphone,
+  'Development Tools': Monitor,
   Methodologies: BarChart3,
 };

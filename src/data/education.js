@@ -2,16 +2,17 @@ import { GraduationCap, Star, Trophy } from 'lucide-react';
 
 export const DEGREE = {
   title: 'Bachelor of Science in Information Technology',
-  school: 'University of Cebu Banilad Campus, Cebu City, Philippines',
+  school: 'University of Cebu - Banilad Campus, Cebu City, Philippines',
 };
 
 export const DEGREE_BADGES = [
-  { icon: GraduationCap, text: 'Class of 2026' },
+  { icon: GraduationCap, text: 'Graduated June 2026' },
   { icon: Star, text: "Dean's List, Years 1\u20112" },
   { icon: Trophy, text: '3rd Place, ICT Congress' },
 ];
 
 export const CERTIFICATIONS = [
+  { title: 'Salesforce Administrator Internship Completion Certificate', org: 'Accenture', date: '2026', type: 'cert' },
   { title: 'ICT Congress 2026 UI/UX Participation', org: 'University of Cebu', date: 'April 2026', type: 'award' },
   { title: 'ICT Congress 2024 Hackathon – 3rd Place', org: 'University of Cebu', date: 'April 2025', type: 'trophy' },
   { title: 'ICT Congress 2024 Hackathon Participation', org: 'University of Cebu', date: 'April 2025', type: 'award' },

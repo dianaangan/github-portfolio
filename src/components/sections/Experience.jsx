@@ -7,7 +7,7 @@ import { staggerContainer, fadeInUp } from '../../lib/motion';
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 lg:py-28 scroll-mt-24 lg:scroll-mt-12">
+    <section id="experience" className="py-24 lg:py-28 scroll-mt-24 lg:scroll-mt-28">
       <Reveal>
         <SectionHeading index="02" title="Experience" />
       </Reveal>
@@ -16,7 +16,7 @@ export default function Experience() {
         <div className="absolute left-[7px] top-2 bottom-2 w-px bg-slate-200 dark:bg-ink-700 hidden sm:block" />
         <div className="space-y-6">
           {EXPERIENCE.map((job) => (
-            <motion.div key={job.id} variants={fadeInUp} className="sm:pl-9 relative">
+            <motion.div key={job.id} variants={fadeInUp} className="sm:pl-9 relative experience-entry">
               <div
                 className={`absolute left-0 top-2 w-3.5 h-3.5 rounded-full hidden sm:block ${
                   job.current
@@ -25,7 +25,7 @@ export default function Experience() {
                 }`}
               />
 
-              <div className="surface glow-hover p-5 sm:p-6">
+              <div className="surface glow-hover p-5 sm:p-8">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
                   <div>
                     <div className="flex items-center gap-2 flex-wrap">
@@ -37,7 +37,7 @@ export default function Experience() {
                       )}
                     </div>
                     <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
-                      {job.company} · {job.type}
+                      {job.company}{job.type && ` · ${job.type}`}
                     </p>
                   </div>
                   <div className="flex items-center gap-1.5 font-mono text-xs text-slate-400 dark:text-slate-500 flex-shrink-0">

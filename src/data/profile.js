@@ -3,18 +3,18 @@ export const PROFILE = {
     first: 'Ma. Diana Rose',
     last: 'Angan-angan',
   },
-  title: 'Junior Software Developer',
+  title: 'Software Developer',
   email: 'anganangandianarose@gmail.com',
   phone: '+63 961 629 0962',
   location: 'Cebu City, Philippines',
   github: 'https://github.com/dianaangan',
   linkedin: 'https://linkedin.com/in/dianaangan',
-  resumePath: '/github-portfolio/resume.pdf?v=20260909',
-  photoPath: '/github-portfolio/images/profile/profile-photo.png?v=20260626',
+  resumePath: '/github-portfolio/resume.pdf?v=20260921',
+  photoPath: '/github-portfolio/images/profile/formal-pic-diana-2.jpg',
   heroBio:
-    'Software developer with professional experience building web and mobile applications. Passionate about scalable solutions and solving real-world problems.',
+    'Software developer with professional experience delivering features and improving business web applications across user interfaces, backend services, APIs, and databases.',
   aboutBio:
-    'Software developer with professional experience building web and mobile applications. Passionate about building scalable software solutions and solving real-world problems through full-stack development, enterprise systems, and innovative project work.',
+    'Software developer with professional experience delivering features and improving business web applications. Works across user interfaces, backend services, APIs, and databases; resolves UI and business-logic defects; improves performance and reliability; and writes unit tests. Hands-on project experience includes web, mobile, cloud, payment, mapping, and blockchain technologies.',
   copyright: '© 2026 Ma. Diana Rose Angan-angan · Built with React & Tailwind CSS',
   footerTagline: 'Open to full-time roles · Part-time · Freelance · Collaboration',
 };

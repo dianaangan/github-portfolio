@@ -33,12 +33,12 @@ export const PROJECTS = [
     title: 'AgriTrust',
     subtitle: 'Blockchain Agricultural Supply Chain Platform',
     description:
-      'Mobile solution for agricultural commerce with blockchain transactions, smart pricing, and logistics automation. Built three role-based mobile apps connecting farmers, customers, and delivery drivers with real-time data sync across the supply chain.',
-    tech: ['React Native', 'Node.js', 'Express.js', 'Solidity', 'MongoDB', 'Firebase', 'Google Maps API', 'Stripe'],
+      'Role-based React Native and Node.js applications for farmers, customers, and drivers with order tracking, real-time notifications, analytics, and GPS delivery workflows. Integrated Stripe payments with Solidity smart contracts, Ethers.js, and Sepolia for traceable transactions and automated fund distribution after delivery.',
+    tech: ['React Native', 'Node.js', 'Express.js', 'Solidity', 'Ethers.js', 'Sepolia', 'MongoDB', 'Firebase', 'Google Maps API', 'Stripe'],
     features: [
       'Three Role-Based Mobile Apps',
-      'Blockchain with Tamper Detection',
-      'Algorithmic Pricing Engine',
+      'Traceable Blockchain Transactions',
+      'Order Tracking & Analytics',
       'Automated Payments & Fund Release',
       'GPS-Optimized Delivery Routing',
       'Real-time Data Sync',
@@ -68,7 +68,7 @@ export const PROJECTS = [
     title: 'KnockTrack',
     subtitle: 'IoT Smart Doorbell Monitoring System',
     description:
-      'An intelligent Android-based doorbell system that provides real-time notifications and comprehensive visitor activity tracking. Enhances home security through cloud synchronization and secure authentication protocols.',
+      'Kotlin Android smart-doorbell app with Firebase authentication, cloud-synchronized activity records, real-time alerts, and a visitor-monitoring dashboard.',
     tech: ['Kotlin', 'Firebase', 'Android Studio', 'IoT', 'Cloud Functions'],
     features: [
       'MVP Architecture Pattern',

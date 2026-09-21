@@ -27,18 +27,21 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-ink-950 text-slate-900 dark:text-slate-100">
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <Sidebar activeSection={activeSection} darkMode={darkMode} onToggleDarkMode={toggleDarkMode} />
       <MobileNav activeSection={activeSection} darkMode={darkMode} onToggleDarkMode={toggleDarkMode} />
 
-      <div className="lg:pl-[340px] xl:pl-[400px]">
-        <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div>
+        <main id="main-content">
           <Hero />
+          <div className="page-width">
           <About />
           <Experience />
           <Projects onImageClick={openImageModal} />
           <Skills />
           <Education />
           <Contact />
+          </div>
         </main>
         <Footer />
       </div>
