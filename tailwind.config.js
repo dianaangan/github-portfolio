@@ -13,19 +13,19 @@ export default {
         mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
       },
       colors: {
-        // Fuchsia pink accent — the single bold accent color for this design.
+        // Mint accent — the single bold accent color for this design.
         accent: {
-          50: '#fdf4ff',
-          100: '#fae8ff',
-          200: '#f5d0fe',
-          300: '#f0abfc',
-          400: '#e879f9',
-          500: '#d946ef',
-          600: '#c026d3',
-          700: '#a21caf',
-          800: '#86198f',
-          900: '#701a75',
-          950: '#4a044e',
+          50: '#effefa',
+          100: '#c9fdf0',
+          200: '#94fbe1',
+          300: '#acf3d3',
+          400: '#8ce8bf',
+          500: '#0dbb96',
+          600: '#0a9a7c',
+          700: '#0c7c65',
+          800: '#0f6353',
+          900: '#0f5245',
+          950: '#052e28',
         },
         // Near-black neutral scale for dark-mode surfaces, distinct from generic slate.
         ink: {
