@@ -5,7 +5,7 @@ const STORAGE_KEY = 'darkMode';
 export function useDarkMode() {
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
-    return saved ? JSON.parse(saved) : true;
+    return saved === 'true';
   });
 
   useEffect(() => {

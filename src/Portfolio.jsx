@@ -26,7 +26,7 @@ export default function Portfolio() {
   const closeImageModal = () => setImageModal((prev) => ({ ...prev, isOpen: false }));
 
   return (
-    <div className="min-h-screen bg-white dark:bg-ink-950 text-slate-900 dark:text-slate-100">
+    <div className="portfolio min-h-screen">
       <a href="#main-content" className="skip-link">Skip to content</a>
       <Sidebar activeSection={activeSection} darkMode={darkMode} onToggleDarkMode={toggleDarkMode} />
       <MobileNav activeSection={activeSection} darkMode={darkMode} onToggleDarkMode={toggleDarkMode} />

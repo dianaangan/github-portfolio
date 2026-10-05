@@ -9,12 +9,12 @@ export const PROFILE = {
   location: 'Cebu City, Philippines',
   github: 'https://github.com/dianaangan',
   linkedin: 'https://linkedin.com/in/dianaangan',
-  resumePath: '/github-portfolio/resume.pdf?v=20260921',
-  photoPath: '/github-portfolio/images/profile/formal-pic-diana-2.jpg',
+  resumePath: '/github-portfolio/resume.pdf?v=20261005',
+  photoPath: '/github-portfolio/images/profile/formal-pic-diana.png',
   heroBio:
-    'Software developer with professional experience delivering features and improving business web applications across user interfaces, backend services, APIs, and databases.',
+    'I develop software that helps people get things done. My experience spans web and mobile applications, from building features to improving performance and reliability. I enjoy learning new technologies and adapting to the needs of each project.',
   aboutBio:
-    'Software developer with professional experience delivering features and improving business web applications. Works across user interfaces, backend services, APIs, and databases; resolves UI and business-logic defects; improves performance and reliability; and writes unit tests. Hands-on project experience includes web, mobile, cloud, payment, mapping, and blockchain technologies.',
+    'My professional experience includes developing application features, resolving defects, testing, and improving workflows. I’ve worked with development teams at Logicim and supported administration and reporting at Accenture. I’m open to working across different technology stacks and bring a practical approach to learning, collaboration, and problem-solving.',
   copyright: '© 2026 Ma. Diana Rose Angan-Angan · Built with React & Tailwind CSS',
   footerTagline: 'Open to full-time roles · Part-time · Freelance · Collaboration',
 };

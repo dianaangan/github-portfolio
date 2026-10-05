@@ -231,3 +231,75 @@ h2 { font-family: 'Space Grotesk', sans-serif; }
  footer p { line-height: 1.8; }
 }
 @media (min-width: 768px) and (max-width: 1023px) { .hero-grid { padding-top: 120px; } .hero-copy h1 { font-size: 38px; } .hero-location { display: none !important; }  .brand-suffix { display: none; } }
+
+/* Restrained typography and consistent layouts keep the work in focus. */
+:root { --page: #faf9f6; --panel: #ffffff; --line: #deded8; --muted: #626762; --text: #252c29; --accent: #28634e; }
+.dark { --page: #191e1c; --panel: #202623; --line: #39423d; --muted: #b0bab3; --text: #f0f3ef; --accent: #9bd2b6; }
+.portfolio { background: var(--page); color: var(--text); }
+.brand, h2, .about-copy h2, .section-intro h2, .focus-card h3, .project-heading h3, .project-subtitle, .more-work h3, #experience h3 { font-family: Inter, system-ui, sans-serif; }
+.brand { font-size: 15px; letter-spacing: -.3px; }
+.nav-link { font-size: 13px; }
+.eyebrow { font-family: Inter, system-ui, sans-serif; font-size: 11px; letter-spacing: .12em; color: var(--accent); }
+.hero-section { background: var(--page); border-bottom: 1px solid var(--line); }
+.hero-grid { grid-template-columns: 1.35fr 1fr; min-height: 650px; gap: 80px; padding-block: 64px; }
+.hero-copy h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(42px, 4.6vw, 64px); line-height: 1.1; letter-spacing: -2px; margin-top: 24px; }
+.hero-role { font: 500 18px/1.6 Inter, sans-serif; margin-top: 26px; }
+.hero-description { font-size: 16px; line-height: 1.85; max-width: 490px; }
+.hero-context { margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.portrait-composition { max-width: 370px; padding: 0; }
+.portrait-frame { border-radius: 3px; aspect-ratio: 1041 / 1230; background: #44434e; }
+.portrait-caption { display: flex; align-items: center; gap: 6px; justify-content: flex-end; font: 12px/1.5 Inter, sans-serif; margin-top: 14px; }
+.btn-solid { background: var(--accent); color: var(--panel); border-radius: 3px; }
+.dark .btn-solid { color: #19251e; }
+.btn-solid:hover { background: #1e503e; color: white; }
+.about-grid { gap: 80px; align-items: start; }
+.about-copy h2, .section-intro h2 { font-size: 32px; letter-spacing: -1px; line-height: 1.3; }
+.focus-card { padding: 24px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; }
+.focus-card:first-child { padding-top: 0; }
+.focus-card:hover { transform: none; }
+.focus-card h3 { font-size: 17px; }
+.focus-card p { font-size: 14px; line-height: 1.6; margin-bottom: 12px; }
+.focus-card > span { font: 12px/1.7 Inter, sans-serif; }
+.section-intro > p { font-size: 14px; }
+.project-grid { gap: 32px; align-items: start; }
+.project-1, .project-2 { margin-top: 0; }
+.project-heading h3 { font-size: 26px; letter-spacing: -.7px; }
+.project-card { display: flex; flex-direction: column; }
+.project-summary { flex: none; }
+.project-cover { flex-shrink: 0; }
+.phone-pair, .project-cover:hover .phone-pair { transform: none; }
+.phone-pair { gap: 22px; padding-top: 22px; }
+.phone-pair img { height: 310px; box-shadow: none; }
+.phone-pair img + img { margin-top: 0; }
+.project-1 .project-cover, .project-2 .project-cover, .web-cover { background: #e5e9e5; }
+.more-work { min-height: 0; align-self: center; padding: 36px; }
+.more-work h3 { font-size: 28px; }
+.glow-hover:hover { box-shadow: none; }
+.contact-panel { border-top: 1px solid var(--line); padding: 48px; }
+.contact-panel h2 { font-size: 38px; letter-spacing: -1px; }
+.tag { font-family: Inter, sans-serif; font-size: 11px; }
+@media (max-width: 1023px) { .hero-grid { gap: 36px; padding-top: 112px; } }
+@media (max-width: 767px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 36px; padding-block: 105px 40px; }
+  .hero-copy h1 { font-size: clamp(40px, 10vw, 56px); letter-spacing: -1.6px; }
+  .hero-role { font-size: 16px; }
+  .hero-description { font-size: 15px; }
+  .portrait-composition { max-width: 340px; padding: 0; }
+  .about-grid { gap: 40px; }
+  .project-grid { gap: 28px; }
+  .contact-panel { padding: 28px 22px; }
+  .contact-panel h2 { font-size: 32px; }
+}
+
+.project-details-panel { overflow: hidden; }
+@media (prefers-reduced-motion: no-preference) {
+  .portfolio, .desktop-header, .hero-section, .project-card, .surface, .contact-panel {
+    transition: background-color .25s ease, border-color .25s ease, color .25s ease;
+  }
+  .btn-solid, .text-link, .circle-link, .project-thumbnails button {
+    transition: color .2s ease, background-color .2s ease, border-color .2s ease, transform .2s ease;
+  }
+  .btn-solid:hover, .project-thumbnails button:hover { transform: translateY(-2px); }
+  .text-link:hover svg, .circle-link:hover svg { transform: translate(2px, -2px); }
+  .text-link svg, .circle-link svg { transition: transform .2s ease; }
+}
